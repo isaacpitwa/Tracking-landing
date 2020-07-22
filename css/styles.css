@@ -29,6 +29,7 @@
 section.landing nav {
     justify-content: space-between;
     align-items: center;
+    padding: 2% 0 8% 0;
 }
 ul.collapse-wrapper{
     list-style: none;
@@ -65,17 +66,19 @@ ul  li:last-child a{
     text-transform: uppercase;
 }
 .label h4 {
-    margin-left: 8%;
+    margin-left: 24px;
     color: var(--grayish-blue);
 }
 
 h1{
     font-size: 4.2rem;
-    padding: 1rem 0 3rem 0;
+    margin: 1.6rem 0;
     color: var(--very-dark-blue);
 }
 p{
-    color: var(--grayish-blue);  
+    color: var(--dark-grayish-blue); 
+    font-size: 18px; 
+    max-width: 64%;
 }
 
 button{
@@ -85,4 +88,15 @@ button{
     padding: 15px 24px;
     font-size: 18px;
     border-radius: 4px;
+}
+span {
+    margin-left: 21px;
+    color: var(--grayish-blue);
+}
+
+.text {
+    max-width: 50%;
+}
+.landing{
+  padding:  2% 0 5% 8%;
 }
