@@ -33,7 +33,7 @@ section.landing nav {
 }
 ul.collapse-wrapper{
     list-style: none;
-    margin-right:8%
+    margin-right:8%;
 }
 ul.collapse-wrapper li{
     padding: 0 7%;
@@ -101,13 +101,19 @@ span {
 }
 .landing{
   padding:  2% 0 0% 8%;
-  /* background: linear-gradient(
-    to right,
-    red,
-    red 1rem,
-    transparent 1rem,
-    transparent 100%
-  ); */
+    position: relative;
+}
+.bg-container{
+    position: absolute;
+    height: 62%;
+    width: 50%;
+    background-color: var(--light-grayish-blue);
+    z-index: -1;
+    border-bottom-left-radius: 32px;
+    top: -2%;
+}
+.nav-bg{
+    
 }
 .image {
     max-width: 50%;
