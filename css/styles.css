@@ -111,10 +111,8 @@ span {
     z-index: -1;
     border-bottom-left-radius: 32px;
     top: -2%;
-}
-.nav-bg{
-    
-}
+} 
+
 .image {
     max-width: 50%;
     overflow: hidden;
