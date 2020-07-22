@@ -29,7 +29,7 @@
 section.landing nav {
     justify-content: space-between;
     align-items: center;
-    padding: 2% 0 8% 0;
+    padding: 2% 0 6% 0;
 }
 ul.collapse-wrapper{
     list-style: none;
@@ -79,6 +79,7 @@ p{
     color: var(--dark-grayish-blue); 
     font-size: 18px; 
     max-width: 64%;
+    margin: 11% 0;
 }
 
 button{
@@ -98,5 +99,5 @@ span {
     max-width: 50%;
 }
 .landing{
-  padding:  2% 0 5% 8%;
+  padding:  2% 0 0% 8%;
 }
