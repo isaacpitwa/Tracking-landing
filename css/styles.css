@@ -66,10 +66,23 @@ ul  li:last-child a{
 }
 .label h4 {
     margin-left: 8%;
-    
+    color: var(--grayish-blue);
 }
 
 h1{
     font-size: 4.2rem;
-    padding: ;
+    padding: 1rem 0 3rem 0;
+    color: var(--very-dark-blue);
+}
+p{
+    color: var(--grayish-blue);  
+}
+
+button{
+    background-color: var(--red);
+    color: var(--light-grayish-blue);
+    border: 0;
+    padding: 15px 24px;
+    font-size: 18px;
+    border-radius: 4px;
 }
