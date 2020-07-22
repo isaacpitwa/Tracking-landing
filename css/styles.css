@@ -33,6 +33,7 @@ section.landing nav {
 }
 ul.collapse-wrapper{
     list-style: none;
+    margin-right:8%
 }
 ul.collapse-wrapper li{
     padding: 0 7%;
@@ -100,4 +101,15 @@ span {
 }
 .landing{
   padding:  2% 0 0% 8%;
+  /* background: linear-gradient(
+    to right,
+    red,
+    red 1rem,
+    transparent 1rem,
+    transparent 100%
+  ); */
+}
+.image {
+    max-width: 50%;
+    overflow: hidden;
 }
