@@ -119,11 +119,63 @@ span {
     max-width: 50%;
     overflow: hidden;
 }
-.toggle-btn{
+.toggle-btn{ 
     display: none;
+    padding: 8px;
+    background-color: transparent;
+    border: none;
 }
 #toggleBtn{
 background-image: url('/images/icon-hamburger.svg');
-width: 32px;
-height: 32px;
+background-repeat: no-repeat;
+width: 24px;
+height: 24px;
 }
+
+@media screen and (max-width:600px){
+    .toggle-btn{
+        display: block;
+    }
+    .collapse-wrapper{
+        display: none !important;
+    }
+    .responsive {position: relative;}
+    .responsive button.toggle-btn {
+        z-index: 1;
+        display: block;
+    }
+
+    .responsive {position: relative;}
+    .responsive .collapse-wrapper{
+      display: block;
+      position: absolute;
+      background-color: #f9f9f9;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      min-width: 100%;
+      top: 45px;
+      height: 650px;
+      background-repeat: no-repeat;
+    }
+    .responsive .opened#toggleBtn{
+        background-image: url('/images/icon-close.svg');
+    }
+    .landing-content{
+        flex-direction: column-reverse;
+    }
+    .bg-container{
+        height: 64vh;
+        width: 40%;
+        right: 0;
+    } 
+    .image img {
+        height: 40vh;
+    }
+    .image{
+        max-width: unset;
+    }
+    .text{
+        max-width: unset;
+        padding: 16% ;
+    }
+  }
