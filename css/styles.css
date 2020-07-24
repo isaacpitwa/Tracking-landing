@@ -47,6 +47,7 @@ ul.collapse-wrapper li{
     text-decoration: none;
     font-family: 'Barlow Condensed', sans-serif;
     letter-spacing: 0.05rem;
+    
 }
 .collapse-wrapper li a:hover{
     text-decoration: underline;
