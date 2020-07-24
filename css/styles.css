@@ -34,6 +34,7 @@ section.landing nav {
 ul.collapse-wrapper{
     list-style: none;
     margin-right:8%;
+    align-items: center;
 }
 ul.collapse-wrapper li{
     padding: 0 7%;
@@ -136,8 +137,8 @@ height: 24px;
     .toggle-btn{
         display: block;
     }
-    .collapse-wrapper{
-        display: none !important;
+    .collapse-items{
+        display: none ;
     }
     .responsive {position: relative;}
     .responsive button.toggle-btn {
@@ -146,7 +147,7 @@ height: 24px;
     }
 
     .responsive {position: relative;}
-    .responsive .collapse-wrapper{
+    .responsive .collapse-items{
       display: block;
       position: absolute;
       background-color: #f9f9f9;
@@ -154,15 +155,30 @@ height: 24px;
       z-index: 1;
       min-width: 100%;
       top: 45px;
-      height: 650px;
+      height: 40vh;
       background-repeat: no-repeat;
     }
     .responsive .opened#toggleBtn{
         background-image: url('/images/icon-close.svg');
     }
+    ul.collapse-wrapper{
+       display: block;
+       text-align: center;
+       margin: 0;
+       padding: 5%;
+        }
+        .nav-dot{
+            width: 100%;
+            height: 2px;
+            background-color: var(--grayish-blue);        
+        }
+        ul.collapse-wrapper li{
+            padding: 0.9rem 0;
+        }
     .landing-content{
         flex-direction: column-reverse;
     }
+
     .bg-container{
         height: 64vh;
         width: 40%;
@@ -176,6 +192,6 @@ height: 24px;
     }
     .text{
         max-width: unset;
-        padding: 16% ;
+        padding: 16%  0;
     }
   }
