@@ -11,6 +11,9 @@
     font-family: 'Barlow', sans-serif;
     
 }
+.body{
+    margin: 0;
+}
 
 .heading{
     
@@ -47,7 +50,7 @@ ul.collapse-wrapper li{
     text-decoration: none;
     font-family: 'Barlow Condensed', sans-serif;
     letter-spacing: 0.05rem;
-    
+
 }
 .collapse-wrapper li a:hover{
     text-decoration: underline;
@@ -116,12 +119,12 @@ span {
 .bg-container{
     position: absolute;
     height: 62%;
-    width: 50%;
+    width: 47%;
     background-color: var(--light-grayish-blue);
     z-index: -1;
     border-bottom-left-radius: 32px;
     top: -2%;
-    overflow: hidden;
+    right: 0;
 } 
 
 
