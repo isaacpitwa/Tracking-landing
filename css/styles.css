@@ -37,7 +37,7 @@ ul.collapse-wrapper{
     align-items: center;
 }
 ul.collapse-wrapper li{
-    padding: 0 7%;
+    padding: 0 1.8rem;
     text-transform: uppercase;
     
 }
@@ -46,6 +46,10 @@ ul.collapse-wrapper li{
     font-weight: 700;
     text-decoration: none;
     font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 0.05rem;
+}
+.collapse-wrapper li a:hover{
+    text-decoration: underline;
 }
 ul  li:last-child a{
     color: var(--dark-grayish-blue);
@@ -70,18 +74,21 @@ ul  li:last-child a{
 .label h4 {
     margin-left: 24px;
     color: var(--grayish-blue);
+    letter-spacing: 0.1rem;
 }
 
 h1{
     font-size: 4.2rem;
     margin: 1.6rem 0;
     color: var(--very-dark-blue);
+    letter-spacing: 0.1rem;
 }
 p{
     color: var(--dark-grayish-blue); 
     font-size: 18px; 
     max-width: 64%;
     margin: 11% 0;
+    
 }
 
 button{
@@ -95,6 +102,7 @@ button{
 span {
     margin-left: 21px;
     color: var(--grayish-blue);
+    letter-spacing: 0.1rem;
 }
 
 .text {
