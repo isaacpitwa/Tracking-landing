@@ -17,8 +17,8 @@
     font-family: 'Barlow Condensed', sans-serif;
 }
 .nav-dot{
-    width: 1rem;
-    height: 1rem;
+    width: 0.5rem;
+    height: 0.5rem;
     background-color: var(--grayish-blue);
     border-radius: 2rem;
 
@@ -34,9 +34,10 @@ section.landing nav {
 ul.collapse-wrapper{
     list-style: none;
     margin-right:8%;
+    align-items: center;
 }
 ul.collapse-wrapper li{
-    padding: 0 7%;
+    padding: 0 1.8rem;
     text-transform: uppercase;
     
 }
@@ -45,6 +46,11 @@ ul.collapse-wrapper li{
     font-weight: 700;
     text-decoration: none;
     font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 0.05rem;
+    
+}
+.collapse-wrapper li a:hover{
+    text-decoration: underline;
 }
 ul  li:last-child a{
     color: var(--dark-grayish-blue);
@@ -69,18 +75,21 @@ ul  li:last-child a{
 .label h4 {
     margin-left: 24px;
     color: var(--grayish-blue);
+    letter-spacing: 0.1rem;
 }
 
 h1{
     font-size: 4.2rem;
     margin: 1.6rem 0;
     color: var(--very-dark-blue);
+    letter-spacing: 0.1rem;
 }
 p{
     color: var(--dark-grayish-blue); 
     font-size: 18px; 
     max-width: 64%;
     margin: 11% 0;
+    
 }
 
 button{
@@ -94,6 +103,7 @@ button{
 span {
     margin-left: 21px;
     color: var(--grayish-blue);
+    letter-spacing: 0.1rem;
 }
 
 .text {
@@ -111,8 +121,86 @@ span {
     z-index: -1;
     border-bottom-left-radius: 32px;
     top: -2%;
+    overflow: hidden;
 } 
+
+
 .image {
     max-width: 50%;
     overflow: hidden;
 }
+.toggle-btn{ 
+    display: none;
+    padding: 8px;
+    background-color: transparent;
+    border: none;
+}
+#toggleBtn{
+background-image: url('/images/icon-hamburger.svg');
+background-repeat: no-repeat;
+width: 24px;
+height: 24px;
+}
+
+@media screen and (max-width:600px){
+    .toggle-btn{
+        display: block;
+    }
+    .collapse-items{
+        display: none ;
+    }
+    .responsive {position: relative;}
+    .responsive button.toggle-btn {
+        z-index: 1;
+        display: block;
+    }
+
+    .responsive {position: relative;}
+    .responsive .collapse-items{
+      display: block;
+      position: absolute;
+      background-color: #f9f9f9;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      min-width: 100%;
+      top: 45px;
+      height: 40vh;
+      background-repeat: no-repeat;
+    }
+    .responsive .opened#toggleBtn{
+        background-image: url('/images/icon-close.svg');
+    }
+    ul.collapse-wrapper{
+       display: block;
+       text-align: center;
+       margin: 0;
+       padding: 5%;
+        }
+        .nav-dot{
+            width: 100%;
+            height: 2px;
+            background-color: var(--grayish-blue);        
+        }
+        ul.collapse-wrapper li{
+            padding: 0.9rem 0;
+        }
+    .landing-content{
+        flex-direction: column-reverse;
+    }
+
+    .bg-container{
+        height: 64vh;
+        width: 40%;
+        right: 0;
+    } 
+    .image img {
+        height: 40vh;
+    }
+    .image{
+        max-width: unset;
+    }
+    .text{
+        max-width: unset;
+        padding: 16%  0;
+    }
+  }
